@@ -6,7 +6,17 @@ import { onMount } from "solid-js"
  * @property {function} [onLoad] Function to run after initial render
  */
 function BeholdWidget(props: { feedId: string; onLoad?: Function }) {
-  onMount(() => {})
+  onMount(() => {
+    const existingScriptEl = document.querySelector(
+      '[src="https://w.behold.so/widget.js"]'
+    )
+    if (existingScriptEl || customElements.get("behold-widget")) return
+
+    const scriptEl = document.createElement("script")
+    scriptEl.src = "https://w.behold.so/widget.js"
+    scriptEl.type = "module"
+    document.body.appendChild(scriptEl)
+  })
 
   return (
     <behold-widget
