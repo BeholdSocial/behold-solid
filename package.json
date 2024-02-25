@@ -1,0 +1,49 @@
+{
+  "name": "@behold/solid",
+  "version": "0.1.1",
+  "description": "The official Behold Widget for Solidjs",
+  "keywords": [
+    "Behold",
+    "SDK",
+    "Solid",
+    "Instagram",
+    "widget",
+    "embedded widget",
+    "web components"
+  ],
+  "homepage": "https://behold.so",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeholdSocial/behold-solid.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BeholdSocial/behold-solid/issues"
+  },
+  "author": "Griffin Johnston",
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "solid-js": "^1.8.15"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "vite": "^5.1.4",
+    "vite-plugin-solid": "^2.10.1"
+  }
+}
