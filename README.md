@@ -52,4 +52,4 @@ This component emits a load event after its initial render. It can be used as fo
 
 ## A note about SSR
 
-Because these widgets are inherantly dynamic in nature, they are client-side only, and won't be pre-rendered by SSR or SSG. That means there will be a moment before they render that their height will be 0px. You can prevent layout shifts this may cause by applying dimensions to a container element with CSS.
+This component relies on client-only APIs and won't be pre-rendered by SSR or SSG. That means there will be a brief moment before it renders where its height will be 0px. You can prevent layout shifts this may cause by applying dimensions to a container element with CSS.
