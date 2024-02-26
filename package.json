@@ -1,6 +1,6 @@
 {
   "name": "@behold/solid",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "The official Behold Widget for Solidjs",
   "keywords": [
     "Behold",
